@@ -1,0 +1,40 @@
+
+
+// Include the Spring Boot plugin
+buildscript {
+    repositories{
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.3.RELEASE'
+    }
+    
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+
+
+sourceCompatibility = '1.8'
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+
+if (!hasProperty('mainClass')) {
+    ext.mainClass = 'com.teamtreehouse.giflib.Application'
+}
+
+// Specify the location where our dependencies will be found
+repositories {
+    mavenCentral()
+}
+
+// Specify dependencies
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    compile 'org.hashids:hashids:1.0.1'
+    compile 'org.springframework:spring-orm:4.3.8.RELEASE'
+    compile 'org.hibernate:hibernate-core:5.2.10.Final'
+    compile 'org.apache.tomcat:tomcat-dbcp:8.5.14'
+    compile 'com.h2database:h2:1.4.195'
+}

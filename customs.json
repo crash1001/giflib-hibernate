@@ -1,0 +1,41 @@
+{
+    "elements": {},
+    "attributes": {
+        "th:classappend": {
+            "context": "div"
+        },
+        "th:text": {
+            "context": "div"
+        },
+        "th:if": {
+            "context": "div"
+        },
+        "th:id": {
+            "context": "div"
+        },
+        "th:src": {
+            "context": "img"
+        },
+        "th:action": {
+            "context": "form"
+        },
+        "th:replace": {
+            "context": "head"
+        },
+        "th:each": {
+            "context": "div"
+        },
+        "th:href": {
+            "context": "a"
+        },
+        "th:field": {
+            "context": "select"
+        },
+        "th:class": {
+            "context": "a"
+        },
+        "th:style": {
+            "context": "div"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+## IntelliJ
+*.iml
+.idea/
+/out/
+/build/
+
+## Gradle
+.gradle/
+
+## Package Files #
+*.jar
+!h2*.jar
+*.war
+*.ear
+/.nb-gradle/
